@@ -28,208 +28,241 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            Login = new Label();
-            vhod = new Button();
-            password = new Label();
-            Filter = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            dateTimePicker2 = new DateTimePicker();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            button1 = new Button();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.Label();
+            this.vhod = new System.Windows.Forms.Button();
+            this.Login = new System.Windows.Forms.Label();
+            this.FilterPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.FilterBtn = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            this.FilterPanel.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Tomato;
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(password);
-            panel1.Controls.Add(vhod);
-            panel1.Controls.Add(Login);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(800, 33);
-            panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = SystemColors.ActiveCaption;
-            panel2.Controls.Add(button1);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(dateTimePicker2);
-            panel2.Controls.Add(dateTimePicker1);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(Filter);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 33);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(800, 107);
-            panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 146);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(800, 304);
-            panel3.TabIndex = 2;
-            // 
-            // Login
-            // 
-            Login.AutoSize = true;
-            Login.Location = new Point(12, 9);
-            Login.Name = "Login";
-            Login.Size = new Size(41, 15);
-            Login.TabIndex = 0;
-            Login.Text = "Логин";
-            // 
-            // vhod
-            // 
-            vhod.Location = new Point(713, 5);
-            vhod.Name = "vhod";
-            vhod.Size = new Size(75, 23);
-            vhod.TabIndex = 1;
-            vhod.Text = "Войти";
-            vhod.UseVisualStyleBackColor = true;
-            // 
-            // password
-            // 
-            password.AutoSize = true;
-            password.Location = new Point(192, 9);
-            password.Name = "password";
-            password.Size = new Size(50, 15);
-            password.TabIndex = 2;
-            password.Text = "Пороль";
-            // 
-            // Filter
-            // 
-            Filter.Location = new Point(0, 37);
-            Filter.Name = "Filter";
-            Filter.Size = new Size(128, 36);
-            Filter.TabIndex = 0;
-            Filter.Text = "Фильтр";
-            Filter.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(134, 48);
-            label1.Name = "label1";
-            label1.Size = new Size(48, 15);
-            label1.TabIndex = 1;
-            label1.Text = "Откуда ";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(282, 48);
-            label2.Name = "label2";
-            label2.Size = new Size(35, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Куда ";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(430, 48);
-            label3.Name = "label3";
-            label3.Size = new Size(31, 15);
-            label3.TabIndex = 3;
-            label3.Text = "Туда";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(603, 48);
-            label4.Name = "label4";
-            label4.Size = new Size(55, 15);
-            label4.TabIndex = 4;
-            label4.Text = "Обратно";
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(467, 42);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(130, 23);
-            dateTimePicker1.TabIndex = 5;
-            // 
-            // dateTimePicker2
-            // 
-            dateTimePicker2.Location = new Point(664, 42);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(130, 23);
-            dateTimePicker2.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(323, 45);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(96, 23);
-            textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(180, 45);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(96, 23);
-            textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(59, 5);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(96, 23);
-            textBox3.TabIndex = 9;
+            this.panel1.BackColor = System.Drawing.Color.Tomato;
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.password);
+            this.panel1.Controls.Add(this.vhod);
+            this.panel1.Controls.Add(this.Login);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(914, 44);
+            this.panel1.TabIndex = 0;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(248, 5);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(96, 23);
-            textBox4.TabIndex = 10;
+            this.textBox4.Location = new System.Drawing.Point(283, 7);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(109, 27);
+            this.textBox4.TabIndex = 10;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(67, 7);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(109, 27);
+            this.textBox3.TabIndex = 9;
+            // 
+            // password
+            // 
+            this.password.AutoSize = true;
+            this.password.Location = new System.Drawing.Point(219, 12);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(63, 20);
+            this.password.TabIndex = 2;
+            this.password.Text = "Пороль";
+            // 
+            // vhod
+            // 
+            this.vhod.Location = new System.Drawing.Point(815, 7);
+            this.vhod.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.vhod.Name = "vhod";
+            this.vhod.Size = new System.Drawing.Size(86, 31);
+            this.vhod.TabIndex = 1;
+            this.vhod.Text = "Войти";
+            this.vhod.UseVisualStyleBackColor = true;
+            // 
+            // Login
+            // 
+            this.Login.AutoSize = true;
+            this.Login.Location = new System.Drawing.Point(14, 12);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(52, 20);
+            this.Login.TabIndex = 0;
+            this.Login.Text = "Логин";
+            // 
+            // FilterPanel
+            // 
+            this.FilterPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.FilterPanel.Controls.Add(this.button1);
+            this.FilterPanel.Controls.Add(this.textBox2);
+            this.FilterPanel.Controls.Add(this.textBox1);
+            this.FilterPanel.Controls.Add(this.dateTimePicker2);
+            this.FilterPanel.Controls.Add(this.dateTimePicker1);
+            this.FilterPanel.Controls.Add(this.label4);
+            this.FilterPanel.Controls.Add(this.label3);
+            this.FilterPanel.Controls.Add(this.label2);
+            this.FilterPanel.Controls.Add(this.label1);
+            this.FilterPanel.Controls.Add(this.FilterBtn);
+            this.FilterPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FilterPanel.Location = new System.Drawing.Point(0, 44);
+            this.FilterPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FilterPanel.Name = "FilterPanel";
+            this.FilterPanel.Size = new System.Drawing.Size(914, 143);
+            this.FilterPanel.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(684, 71);
-            button1.Name = "button1";
-            button1.Size = new Size(93, 33);
-            button1.TabIndex = 9;
-            button1.Text = "Поиск";
-            button1.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(782, 95);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 44);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Поиск";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(206, 60);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(109, 27);
+            this.textBox2.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(369, 60);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(109, 27);
+            this.textBox1.TabIndex = 7;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(759, 56);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(148, 27);
+            this.dateTimePicker2.TabIndex = 6;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(534, 56);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(148, 27);
+            this.dateTimePicker1.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(689, 64);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Обратно";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(491, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Туда";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(322, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Куда ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(153, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Откуда ";
+            // 
+            // FilterBtn
+            // 
+            this.FilterBtn.Location = new System.Drawing.Point(0, 0);
+            this.FilterBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FilterBtn.Name = "FilterBtn";
+            this.FilterBtn.Size = new System.Drawing.Size(146, 48);
+            this.FilterBtn.TabIndex = 0;
+            this.FilterBtn.Text = "Фильтр";
+            this.FilterBtn.UseVisualStyleBackColor = true;
+            this.FilterBtn.Click += new System.EventHandler(this.FilterBtn_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 195);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(914, 405);
+            this.panel3.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(364, 298);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "обыч поезд";
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(panel3);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            Name = "MainForm";
-            Text = "MainForm";
-            Load += MainForm_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.FilterPanel);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "MainForm";
+            this.Text = "MainForm";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.FilterPanel.ResumeLayout(false);
+            this.FilterPanel.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -237,10 +270,10 @@
         private Panel panel1;
         private Button vhod;
         private Label Login;
-        private Panel panel2;
+        private Panel FilterPanel;
         private Panel panel3;
         private Label password;
-        private Button Filter;
+        private Button FilterBtn;
         private TextBox textBox4;
         private TextBox textBox3;
         private TextBox textBox2;
@@ -252,5 +285,6 @@
         private Label label2;
         private Label label1;
         private Button button1;
+        private PictureBox pictureBox1;
     }
 }
