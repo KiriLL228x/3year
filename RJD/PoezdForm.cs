@@ -12,9 +12,18 @@ namespace RJD
 {
     public partial class PoezdForm : Form
     {
-        public PoezdForm()
+        public PoezdForm(string name)
         {
             InitializeComponent();
+
+            Text = "Поезд \"" + name + "\"";
+            PoezdLabel.Text = name;
+            PoezdPictureBox.Load("../../picture/" + name + ".jpg");
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

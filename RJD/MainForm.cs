@@ -34,7 +34,7 @@ namespace RJD
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Poezd_Click(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
             PoezdForm PoezdForm = new PoezdForm(pb.Tag.ToString());

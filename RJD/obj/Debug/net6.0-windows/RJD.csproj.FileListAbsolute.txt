@@ -15,3 +15,22 @@ D:\Корнилов Кирилл2\RJD\obj\Debug\net6.0-windows\refint\RJD.dll
 D:\Корнилов Кирилл2\RJD\obj\Debug\net6.0-windows\RJD.pdb
 D:\Корнилов Кирилл2\RJD\obj\Debug\net6.0-windows\RJD.genruntimeconfig.cache
 D:\Корнилов Кирилл2\RJD\obj\Debug\net6.0-windows\ref\RJD.dll
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.csproj.AssemblyReference.cache
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.dll
+D:\3year-main\RJD\obj\Debug\net6.0-windows\refint\RJD.dll
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.pdb
+D:\3year-main\RJD\bin\Debug\net6.0-windows\RJD.exe
+D:\3year-main\RJD\bin\Debug\net6.0-windows\RJD.deps.json
+D:\3year-main\RJD\bin\Debug\net6.0-windows\RJD.runtimeconfig.json
+D:\3year-main\RJD\bin\Debug\net6.0-windows\RJD.dll
+D:\3year-main\RJD\bin\Debug\net6.0-windows\RJD.pdb
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.MainForm.resources
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.PoezdForm.resources
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.Properties.Resources.resources
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.csproj.GenerateResource.cache
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.GeneratedMSBuildEditorConfig.editorconfig
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.AssemblyInfoInputs.cache
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.AssemblyInfo.cs
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.csproj.CoreCompileInputs.cache
+D:\3year-main\RJD\obj\Debug\net6.0-windows\RJD.genruntimeconfig.cache
+D:\3year-main\RJD\obj\Debug\net6.0-windows\ref\RJD.dll

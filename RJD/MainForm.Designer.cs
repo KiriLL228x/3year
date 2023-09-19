@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -47,11 +46,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.FilterBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.обычный = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.FilterPanel.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.обычный)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -224,7 +223,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.обычный);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 195);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -232,17 +231,17 @@
             this.panel3.Size = new System.Drawing.Size(914, 405);
             this.panel3.TabIndex = 2;
             // 
-            // pictureBox1
+            // обычный
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(364, 298);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "обыч поезд";
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.обычный.Image = global::RJD.Properties.Resources.main;
+            this.обычный.Location = new System.Drawing.Point(3, 33);
+            this.обычный.Name = "обычный";
+            this.обычный.Size = new System.Drawing.Size(364, 298);
+            this.обычный.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.обычный.TabIndex = 0;
+            this.обычный.TabStop = false;
+            this.обычный.Tag = "обычный";
+            this.обычный.Click += new System.EventHandler(this.Poezd_Click);
             // 
             // MainForm
             // 
@@ -260,7 +259,7 @@
             this.FilterPanel.ResumeLayout(false);
             this.FilterPanel.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.обычный)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -285,6 +284,6 @@
         private Label label2;
         private Label label1;
         private Button button1;
-        private PictureBox pictureBox1;
+        private PictureBox обычный;
     }
 }
