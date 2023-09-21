@@ -22,23 +22,11 @@ namespace RJD
 
         }
 
-        private void FilterBtn_Click(object sender, EventArgs e)
-        {
-           if(FilterPanel.Height < 143)
-            {
-                FilterPanel.Height = 143;
-            }
-           else
-            {
-                FilterPanel.Height = FilterBtn.Size.Height;
-            }
-        }
-
-        private void Poezd_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
-            PoezdForm PoezdForm = new PoezdForm(pb.Tag.ToString());
-            PoezdForm.ShowDialog();
+            PoezdForm pf = new PoezdForm(pb.Tag.ToString());
+            pf.ShowDialog();
         }
     }
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\3year-main\\RJD\\RJD.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Downloads\\3year-cc77f2c1771721500266ba405ca16ecb35719343\\3year-cc77f2c1771721500266ba405ca16ecb35719343\\RJD\\RJD.csproj",
       "projectName": "RJD",
-      "projectPath": "D:\\3year-main\\RJD\\RJD.csproj",
+      "projectPath": "C:\\Users\\user\\Downloads\\3year-cc77f2c1771721500266ba405ca16ecb35719343\\3year-cc77f2c1771721500266ba405ca16ecb35719343\\RJD\\RJD.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\3year-main\\RJD\\obj\\",
+      "outputPath": "C:\\Users\\user\\Downloads\\3year-cc77f2c1771721500266ba405ca16ecb35719343\\3year-cc77f2c1771721500266ba405ca16ecb35719343\\RJD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

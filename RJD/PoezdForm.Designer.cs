@@ -28,123 +28,117 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.PoezdLabel = new System.Windows.Forms.Label();
-            this.PoezdPictureBox = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PoezdPictureBox)).BeginInit();
-            this.panel2.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PoezdForm));
+            this.InfoPictureBox = new System.Windows.Forms.PictureBox();
+            this.InfoPanel = new System.Windows.Forms.Panel();
+            this.MestoPanel = new System.Windows.Forms.Panel();
+            this.SV = new System.Windows.Forms.PictureBox();
+            this.Kupe = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoPictureBox)).BeginInit();
+            this.InfoPanel.SuspendLayout();
+            this.MestoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kupe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // InfoPictureBox
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.PoezdLabel);
-            this.panel1.Controls.Add(this.PoezdPictureBox);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 236);
-            this.panel1.TabIndex = 0;
+            this.InfoPictureBox.Location = new System.Drawing.Point(41, 13);
+            this.InfoPictureBox.Margin = new System.Windows.Forms.Padding(4);
+            this.InfoPictureBox.Name = "InfoPictureBox";
+            this.InfoPictureBox.Size = new System.Drawing.Size(447, 302);
+            this.InfoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.InfoPictureBox.TabIndex = 0;
+            this.InfoPictureBox.TabStop = false;
             // 
-            // textBox1
+            // InfoPanel
             // 
-            this.textBox1.Location = new System.Drawing.Point(462, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(321, 213);
-            this.textBox1.TabIndex = 3;
+            this.InfoPanel.Controls.Add(this.InfoPictureBox);
+            this.InfoPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.InfoPanel.Location = new System.Drawing.Point(0, 0);
+            this.InfoPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.InfoPanel.Name = "InfoPanel";
+            this.InfoPanel.Size = new System.Drawing.Size(1177, 339);
+            this.InfoPanel.TabIndex = 1;
             // 
-            // PoezdLabel
+            // MestoPanel
             // 
-            this.PoezdLabel.AutoSize = true;
-            this.PoezdLabel.Location = new System.Drawing.Point(363, 12);
-            this.PoezdLabel.Name = "PoezdLabel";
-            this.PoezdLabel.Size = new System.Drawing.Size(50, 20);
-            this.PoezdLabel.TabIndex = 1;
-            this.PoezdLabel.Text = "label1";
+            this.MestoPanel.Controls.Add(this.SV);
+            this.MestoPanel.Controls.Add(this.Kupe);
+            this.MestoPanel.Controls.Add(this.pictureBox1);
+            this.MestoPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MestoPanel.Location = new System.Drawing.Point(0, 339);
+            this.MestoPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.MestoPanel.Name = "MestoPanel";
+            this.MestoPanel.Size = new System.Drawing.Size(1177, 306);
+            this.MestoPanel.TabIndex = 2;
             // 
-            // PoezdPictureBox
+            // SV
             // 
-            this.PoezdPictureBox.Location = new System.Drawing.Point(12, 3);
-            this.PoezdPictureBox.Name = "PoezdPictureBox";
-            this.PoezdPictureBox.Size = new System.Drawing.Size(345, 222);
-            this.PoezdPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PoezdPictureBox.TabIndex = 0;
-            this.PoezdPictureBox.TabStop = false;
+            this.SV.Image = ((System.Drawing.Image)(resources.GetObject("SV.Image")));
+            this.SV.Location = new System.Drawing.Point(801, 7);
+            this.SV.Name = "SV";
+            this.SV.Size = new System.Drawing.Size(346, 240);
+            this.SV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SV.TabIndex = 2;
+            this.SV.TabStop = false;
+            this.SV.Tag = "SV";
+            this.SV.Click += new System.EventHandler(this.Room_Click);
             // 
-            // panel2
+            // Kupe
             // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 236);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 214);
-            this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.Kupe.Image = ((System.Drawing.Image)(resources.GetObject("Kupe.Image")));
+            this.Kupe.Location = new System.Drawing.Point(405, 7);
+            this.Kupe.Name = "Kupe";
+            this.Kupe.Size = new System.Drawing.Size(346, 240);
+            this.Kupe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Kupe.TabIndex = 1;
+            this.Kupe.TabStop = false;
+            this.Kupe.Tag = "Kupe";
+            this.Kupe.Click += new System.EventHandler(this.Room_Click);
             // 
-            // label3
+            // pictureBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 140);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Купе для инвалидов";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Купе";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Сидячий";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(346, 240);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "Plackart";
+            this.pictureBox1.Click += new System.EventHandler(this.Room_Click);
             // 
             // PoezdForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1177, 645);
+            this.Controls.Add(this.MestoPanel);
+            this.Controls.Add(this.InfoPanel);
+            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PoezdForm";
             this.Text = "PoezdForm";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PoezdPictureBox)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoPictureBox)).EndInit();
+            this.InfoPanel.ResumeLayout(false);
+            this.MestoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kupe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Panel panel1;
-        private TextBox textBox1;
-        private Label PoezdLabel;
-        private PictureBox PoezdPictureBox;
-        private Panel panel2;
-        private Label label3;
-        private Label label2;
-        private Label label1;
+        private PictureBox InfoPictureBox;
+        private Panel InfoPanel;
+        private Panel MestoPanel;
+        private PictureBox SV;
+        private PictureBox Kupe;
+        private PictureBox pictureBox1;
     }
 }

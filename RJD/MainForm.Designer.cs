@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.Label();
             this.vhod = new System.Windows.Forms.Button();
             this.Login = new System.Windows.Forms.Label();
-            this.FilterPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -44,13 +45,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.FilterBtn = new System.Windows.Forms.Button();
+            this.Filter = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.обычный = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.FilterPanel.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.обычный)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,25 +113,25 @@
             this.Login.TabIndex = 0;
             this.Login.Text = "Логин";
             // 
-            // FilterPanel
+            // panel2
             // 
-            this.FilterPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.FilterPanel.Controls.Add(this.button1);
-            this.FilterPanel.Controls.Add(this.textBox2);
-            this.FilterPanel.Controls.Add(this.textBox1);
-            this.FilterPanel.Controls.Add(this.dateTimePicker2);
-            this.FilterPanel.Controls.Add(this.dateTimePicker1);
-            this.FilterPanel.Controls.Add(this.label4);
-            this.FilterPanel.Controls.Add(this.label3);
-            this.FilterPanel.Controls.Add(this.label2);
-            this.FilterPanel.Controls.Add(this.label1);
-            this.FilterPanel.Controls.Add(this.FilterBtn);
-            this.FilterPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.FilterPanel.Location = new System.Drawing.Point(0, 44);
-            this.FilterPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.FilterPanel.Name = "FilterPanel";
-            this.FilterPanel.Size = new System.Drawing.Size(914, 143);
-            this.FilterPanel.TabIndex = 1;
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.dateTimePicker2);
+            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.Filter);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 44);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(914, 143);
+            this.panel2.TabIndex = 1;
             // 
             // button1
             // 
@@ -210,20 +211,19 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Откуда ";
             // 
-            // FilterBtn
+            // Filter
             // 
-            this.FilterBtn.Location = new System.Drawing.Point(0, 0);
-            this.FilterBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.FilterBtn.Name = "FilterBtn";
-            this.FilterBtn.Size = new System.Drawing.Size(146, 48);
-            this.FilterBtn.TabIndex = 0;
-            this.FilterBtn.Text = "Фильтр";
-            this.FilterBtn.UseVisualStyleBackColor = true;
-            this.FilterBtn.Click += new System.EventHandler(this.FilterBtn_Click);
+            this.Filter.Location = new System.Drawing.Point(0, 49);
+            this.Filter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Filter.Name = "Filter";
+            this.Filter.Size = new System.Drawing.Size(146, 48);
+            this.Filter.TabIndex = 0;
+            this.Filter.Text = "Фильтр";
+            this.Filter.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.обычный);
+            this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 195);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -231,17 +231,17 @@
             this.panel3.Size = new System.Drawing.Size(914, 405);
             this.panel3.TabIndex = 2;
             // 
-            // обычный
+            // pictureBox1
             // 
-            this.обычный.Image = global::RJD.Properties.Resources.main;
-            this.обычный.Location = new System.Drawing.Point(3, 33);
-            this.обычный.Name = "обычный";
-            this.обычный.Size = new System.Drawing.Size(364, 298);
-            this.обычный.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.обычный.TabIndex = 0;
-            this.обычный.TabStop = false;
-            this.обычный.Tag = "обычный";
-            this.обычный.Click += new System.EventHandler(this.Poezd_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(27, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(340, 284);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "poezd";
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // MainForm
             // 
@@ -249,17 +249,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.FilterPanel);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.FilterPanel.ResumeLayout(false);
-            this.FilterPanel.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.обычный)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,10 +269,10 @@
         private Panel panel1;
         private Button vhod;
         private Label Login;
-        private Panel FilterPanel;
+        private Panel panel2;
         private Panel panel3;
         private Label password;
-        private Button FilterBtn;
+        private Button Filter;
         private TextBox textBox4;
         private TextBox textBox3;
         private TextBox textBox2;
@@ -284,6 +284,6 @@
         private Label label2;
         private Label label1;
         private Button button1;
-        private PictureBox обычный;
+        private PictureBox pictureBox1;
     }
 }
